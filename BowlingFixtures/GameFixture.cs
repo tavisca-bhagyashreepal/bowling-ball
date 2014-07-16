@@ -24,7 +24,7 @@ namespace BowlingFixtures
 
             try
             {
-                Game gmobj = new Game();
+                Bowling.Game gmobj = new Bowling.Game();
                 gmobj.Roll(10);
                 gmobj.Roll(10);
                 gmobj.Roll(10);
@@ -54,7 +54,7 @@ namespace BowlingFixtures
 
             try
             {
-                Game gmobj = new Game();
+                Bowling.Game gmobj = new Bowling.Game();
                 gmobj.Roll(0);
                 gmobj.Roll(0);
                 gmobj.Roll(0);
@@ -94,7 +94,7 @@ namespace BowlingFixtures
 
             try
             {
-                Game gmobj = new Game();
+                Bowling.Game gmobj = new Bowling.Game();
                 gmobj.Roll(3);
                 gmobj.Roll(7);
                 gmobj.Roll(3);
@@ -133,7 +133,7 @@ namespace BowlingFixtures
 
             try
             {
-                Game gmobj = new Game();
+                Bowling.Game gmobj = new Bowling.Game();
                 gmobj.Roll(10);
                 gmobj.Roll(10);
                 gmobj.Roll(3);
@@ -159,12 +159,12 @@ namespace BowlingFixtures
 
         //5.case with score in between
         [TestMethod]
-        public void GameWithSomeSparesSomeStrikes()
+        public void GameInBetween()
         {
 
             try
             {
-                Game gmobj = new Game();
+                Bowling.Game gmobj = new Bowling.Game();
                 gmobj.Roll(10);
                 gmobj.Roll(10);
                 gmobj.Roll(3);
