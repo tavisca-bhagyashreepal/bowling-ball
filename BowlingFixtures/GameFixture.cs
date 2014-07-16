@@ -43,7 +43,7 @@ namespace BowlingFixtures
             }
             catch (Exception ex)
             {
-                //Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
+                Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
             }
         }
 
@@ -80,7 +80,7 @@ namespace BowlingFixtures
             }
             catch (Exception ex)
             {
-                //Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
+                Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
             }
         }
 
@@ -121,7 +121,7 @@ namespace BowlingFixtures
             }
             catch (Exception ex)
             {
-                //Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
+                Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
             }
         }
 
@@ -153,7 +153,7 @@ namespace BowlingFixtures
             }
             catch (Exception ex)
             {
-                //Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
+                Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
             }
         }
 
@@ -176,7 +176,7 @@ namespace BowlingFixtures
             }
             catch (Exception ex)
             {
-                //Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
+                Assert.Fail("Not equal to {0}!!!",ex.GetType().Name);
             }
         }
 
