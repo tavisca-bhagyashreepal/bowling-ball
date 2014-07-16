@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +8,7 @@ namespace Bowling
 {
     public class Game
     {
-        int[] frame = new int[20];
+        int[] frame = new int[30];
         int rolls = 0;
         int score = 0;
         public void Roll(int pins)
@@ -27,22 +27,25 @@ namespace Bowling
             int j = 0;
             for (j = 0; j < 20; j++)
             {
-                if ((j % 2 == 0) && (frame[j] == 10) && (frame[j+2]==10))
-                    score = score + frame[j+2]+frame[j+4];
-                else if ((j % 2 == 0) && (frame[j + 2] == 10))
+                score = score + frame[j];
+                if ((j % 2 == 0) && (frame[j] == 10) && (frame[j + 2] == 10))
+                    score = score + frame[j + 2] + frame[j + 4];
+                else if ((j % 2 == 0) && (frame[j] == 10) && (frame[j + 2] != 10))
                     score = score + frame[j + 2] + frame[j + 3];
-                else if ((j%2==0) && ((frame[j]+frame[j+1])==10))
-                    score=score+frame[j+2];
-                
-                
-                score=score+frame[j];
+                else if ((j % 2 != 0) && (frame[j] == 10))
+                    score = score + frame[j + 1];
+                else if ((j % 2 == 0) && ((frame[j] + frame[j + 1]) == 10))
+                { score = score + frame[j + 2] + frame[j + 1]; j++; }
+
+
+
             }
             return score;
-           
+
 
         }
     }
 }
 
-    
+
 
